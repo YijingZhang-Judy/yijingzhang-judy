@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>个人网页</title>
+    <style>
+      /* 隐藏所有的内容区块 */
+      .section {
+        display: none;
+      }
+
+      /* 显示当前选中的内容区块 */
+      .section.active {
+        display: block;
+      }
+
+      /* 导航链接的样式 */
+      nav ul li a {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* 选中的导航链接的样式 */
+      nav ul li a.active {
+        background-color: #f00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="html/home.html">主页</a></li>
+        <li><a href="html/about.html">个人介绍</a></li>
+        <li><a href="html/portfolio.html">作品集</a></li>
+        <li><a href="html/contact.html">联系方式</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      window.onload = function() {
+        // 获取当前页面的 URL
+        var url = window.location.href;
+        // 获取所有的导航链接
+        var links = document.querySelectorAll("nav ul li a");
+        // 根据 URL 判断哪个导航链接应该被选中
+        links.forEach(function(link) {
+          if (link.href === url) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
