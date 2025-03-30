@@ -1,21 +1,109 @@
 body {
-	background-color: #f0fff0; /* 设置页面背景色为薄荷绿色 */
-	font-family: Arial, sans-serif; /* 设置字体为Arial，sans-serif字体系列 */
-	margin: 0; /* 清除页面边距 */
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0fff0;
+			color: #333;
+			line-height: 1.5;
+			animation: fade-in 1s;
 }
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation: slide-down 1s;
+}
+
+nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+}
+
+nav li {
+		margin-right: 20px;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		transition: all 0.2s;
+		cursor: pointer;
+}
+
+nav li:hover {
+		transform: scale(1.1);
+}
+
+nav a {
+		color: #fff;
+		text-decoration: none;
+		padding: 5px 10px;
+}
+
 
 header {
-	background-color: #90ee90; /* 设置页眉背景色为淡绿色 */
-	padding: 20px; /* 添加页眉内边距 */
-	text-align: center; /* 将页眉居中对齐 */
+		background-image: url("https://i.ibb.co/7Nkb872/dream-Trading-Card-10.jpg");
+		background-size: cover;
+		background-position: center;
+		/*font-size: 300px;*/
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		animation: fade-in 1s;
 }
 
-main {
-	margin: 20px; /* 添加页面主体外边距 */
+h1 {
+		font-size: 100px;
+		margin-bottom: 20px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 2px 2px #333;
+}
+
+
+section {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 40px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		margin-top: 50px;
+		animation: fade-in 1s;
+}
+
+h2 {
+		font-size: 32px;
+		margin-bottom: 20px;
+		color: #333;
+		text-align: center;
+		text-transform: uppercase;
+}
+
+form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 40px;
+}
+
+label {
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: #333;
 }
 
 footer {
-	background-color: #90ee90; /* 设置页脚背景色为淡绿色 */
-	padding: 10px; /* 添加页脚内边距 */
-	text-align: center; /* 将页脚居中对齐 */
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+		margin-top: 50px;
+		animation: slide-up 1s;
 }

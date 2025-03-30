@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Upload Page</title>
+	<!-- Styles -->
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			animation: fade-in 1s;
+		}
+
+		/* Navigation styles */
+		nav {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			animation: slide-down 1s;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav li {
+			margin: 0 10px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			transition: all 0.2s;
+		}
+
+		nav a:hover {
+			color: #ddd;
+		}
+
+		/* Header styles */
+		header {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 50px 0;
+			animation: slide-down 1s;
+		}
+
+		header h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+
+		/* Main content styles */
+		section {
+			background-color: #fff;
+			margin: 50px auto;
+			padding: 20px;
+			width: 80%;
+			max-width: 600px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			animation: slide-up 1s;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="file"] {
+			display: block;
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			transition: all 0.2s;
+		}
+
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="file"]:focus {
+			outline: none;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		button[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 20px;
+			cursor: pointer;
+			transition: all 0.2s;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #444;
+		}
+
+		/* Footer styles */
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			margin-top: 50px;
+			animation: slide-up 1
+		}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* Keyframe animations */
+@keyframes slide-down {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="upload.html">Upload</a></li>
+		</ul>
+	</nav>
+	<!-- Header -->
+<header>
+	<h1>Upload Your Artwork</h1>
+</header>
+
+<!-- Main content -->
+<section>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="artwork">Artwork:</label>
+		<input type="file" id="artwork" name="artwork" required>
+
+		<button type="submit">Submit</button>
+	</form>
+</section>
+
+<!-- Footer -->
+<footer>
+	<p>&copy; 2023 Exhibition. All rights reserved.</p>
+</footer>
+</body>
+</html>
