@@ -1,0 +1,21 @@
+body {
+	background-color: #f0fff0; /* 设置页面背景色为薄荷绿色 */
+	font-family: Arial, sans-serif; /* 设置字体为Arial，sans-serif字体系列 */
+	margin: 0; /* 清除页面边距 */
+}
+
+header {
+	background-color: #90ee90; /* 设置页眉背景色为淡绿色 */
+	padding: 20px; /* 添加页眉内边距 */
+	text-align: center; /* 将页眉居中对齐 */
+}
+
+main {
+	margin: 20px; /* 添加页面主体外边距 */
+}
+
+footer {
+	background-color: #90ee90; /* 设置页脚背景色为淡绿色 */
+	padding: 10px; /* 添加页脚内边距 */
+	text-align: center; /* 将页脚居中对齐 */
+}
